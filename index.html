@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Layan Saleem | Cybersecurity Portfolio</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Segoe UI,sans-serif;
+background:#0d0d0d;
+color:#f4f1e8;
+}
+
+nav{
+position:fixed;
+width:100%;
+padding:20px;
+background:rgba(0,0,0,.85);
+backdrop-filter:blur(10px);
+z-index:100;
+}
+
+nav ul{
+display:flex;
+justify-content:center;
+gap:30px;
+list-style:none;
+}
+
+nav a{
+color:#f4f1e8;
+text-decoration:none;
+transition:.3s;
+}
+
+nav a:hover{
+color:#d9b400;
+}
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.profile{
+width:220px;
+height:220px;
+border-radius:50%;
+border:6px solid #c23a7a;
+object-fit:cover;
+margin-bottom:25px;
+box-shadow:0 0 30px rgba(194,58,122,.5);
+}
+
+h1{
+font-size:4rem;
+}
+
+.highlight{
+color:#d9b400;
+}
+
+.subtitle{
+font-size:1.3rem;
+margin-top:10px;
+color:#c23a7a;
+}
+
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:15px 30px;
+background:#d96a1b;
+color:white;
+text-decoration:none;
+border-radius:40px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+background:#c23a7a;
+}
+
+section{
+padding:100px 10%;
+}
+
+.section-title{
+font-size:2.5rem;
+margin-bottom:40px;
+color:#d9b400;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:#171717;
+padding:25px;
+border-radius:20px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+border:1px solid #c23a7a;
+}
+
+footer{
+text-align:center;
+padding:40px;
+color:#aaa;
+}
+
+.fade{
+animation:fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#certifications">Certifications</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero fade">
+
+<img src="profile.jpg" class="profile">
+
+<h1>Hello, I'm <span class="highlight">Layan Saleem</span></h1>
+
+<p class="subtitle">
+Cybersecurity Student | Digital Forensics Enthusiast
+</p>
+
+<a href="CV.pdf" download class="btn">
+Download CV
+</a>
+
+</section>
+
+<section id="about">
+
+<h2 class="section-title">About Me</h2>
+
+<p>
+I am a Cybersecurity student passionate about digital forensics,
+network security, incident response, and cyber defense.
+I enjoy learning new technologies and building practical skills
+through projects and hands-on labs.
+</p>
+
+</section>
+
+<section id="skills">
+
+<h2 class="section-title">Skills</h2>
+
+<div class="cards">
+
+<div class="card">Linux</div>
+<div class="card">Python</div>
+<div class="card">Networking</div>
+<div class="card">Digital Forensics</div>
+<div class="card">Wireshark</div>
+<div class="card">Incident Response</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2 class="section-title">Projects</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Network Analysis Lab</h3>
+<p>Traffic analysis using Wireshark.</p>
+</div>
+
+<div class="card">
+<h3>Digital Forensics Case</h3>
+<p>Memory and disk investigation project.</p>
+</div>
+
+<div class="card">
+<h3>Python Security Tool</h3>
+<p>Automation and security scripting.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="certifications">
+
+<h2 class="section-title">Certifications</h2>
+
+<div class="cards">
+
+<div class="card">
+CompTIA Security+ (Future)
+</div>
+
+<div class="card">
+IBM SkillsBuild
+</div>
+
+<div class="card">
+Cisco Networking Academy
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="section-title">Contact</h2>
+
+<p>Email: your@email.com</p>
+
+<p>GitHub: github.com/yourusername</p>
+
+<p>LinkedIn: linkedin.com/in/yourname</p>
+
+</section>
+
+<footer>
+
+© 2026 Layan Saleem Portfolio
+
+</footer>
+
+</body>
+</html>
